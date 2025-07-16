@@ -4,142 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emmanuel Kang'ethe | Data Scientist</title>
-  <style>
-    :root {
-      --primary-color: #2e3a59;
-      --accent-color: #00bcd4;
-      --bg-color: #f7f9fc;
-      --text-color: #333;
-      --card-bg: #ffffff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .wrapper {
-      background-color: var(--card-bg);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 900px;
-      width: 100%;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--accent-color);
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: var(--primary-color);
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #666;
-      margin-bottom: 30px;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: var(--accent-color);
-      font-weight: 600;
-      margin: 0 15px;
-      font-size: 1.1rem;
-    }
-
-    .section {
-      margin-top: 50px;
-      text-align: left;
-    }
-
-    .section h3 {
-      font-size: 1.6rem;
-      color: var(--primary-color);
-      margin-bottom: 15px;
-    }
-
-    .project {
-      background: #f1f3f5;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-    }
-
-    .project-title {
-      font-size: 1.2rem;
-      color: var(--accent-color);
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .resume a {
-      display: inline-block;
-      margin-top: 20px;
-      background: var(--accent-color);
-      color: white;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .resume a:hover {
-      background: #0097a7;
-    }
-
-    .contact {
-      text-align: left;
-      margin-top: 50px;
-    }
-
-    .contact p {
-      font-size: 1rem;
-      margin: 8px 0;
-    }
-
-    .contact a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLVP26XGRM"></script>
+  <script defer src="main.js"></script>
 </head>
 <body>
   <div class="wrapper">
+    <!-- Hero Section -->
     <img class="profile-pic" src="https://i.imgur.com/P1ja3MB.jpeg" alt="Profile Photo">
     <h1>Emmanuel Kang'ethe</h1>
     <div class="tagline">Data Science Enthusiast | Python Developer | Passionate About Impactful Insights</div>
@@ -148,7 +20,13 @@
       <a href="https://www.linkedin.com/in/emmanuel-ikinya-kangethe/" target="_blank">LinkedIn</a>
     </div>
 
-    <div class="section">
+    <!-- Resume Button -->
+    <div class="section resume">
+      <a href="https://drive.google.com/file/d/13nBiVqmbTJahXPXnp1GZ7tSCVv4bpIlR/view?usp=sharing" target="_blank">Download My Resume</a>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section" id="projects">
       <h3>Projects</h3>
       <div class="project">
         <div class="project-title">Sales Forecasting Model</div>
@@ -164,15 +42,32 @@
       </div>
     </div>
 
-    <div class="section resume">
-      <h3>Resume</h3>
-      <a href="https://drive.google.com/file/d/13nBiVqmbTJahXPXnp1GZ7tSCVv4bpIlR/view?usp=sharing" target="_blank">Download My Resume</a>
+    <!-- Testimonials Section -->
+    <div class="testimonials section" id="testimonials">
+      <h3>Testimonials</h3>
+      <div class="testimonial">"Emmanuel's analytical skills and attention to detail are outstanding. He delivers actionable insights every time."<br><span style="font-size:0.98em;color:#2196f3;">— Jane Doe, Team Lead</span></div>
+      <div class="testimonial">"A true professional in data science. Emmanuel's work ethic and creativity are top-notch!"<br><span style="font-size:0.98em;color:#2196f3;">— John Smith, Project Manager</span></div>
     </div>
 
-    <div class="section contact">
+    <!-- Blog Section Placeholder -->
+    <div class="blog section" id="blog">
+      <h3>Blog <span style="font-size:0.9em;color:#888;">(Coming Soon)</span></h3>
+      <div class="blog-post"><span class="blog-title">How to Build a Forecasting Model</span><span class="blog-date">May 2025</span></div>
+      <div class="blog-post"><span class="blog-title">Data Visualization Best Practices</span><span class="blog-date">Apr 2025</span></div>
+      <div class="blog-post"><span class="blog-title">Why Python is Great for Data Science</span><span class="blog-date">Mar 2025</span></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contact" id="contact">
       <h3>Contact Me</h3>
       <p>Email: <a href="mailto:manuikinya@gmail.com">manuikinya@gmail.com</a></p>
-      <p>Phone: <a href="tel:+254712345678">+254 707 914 347</a></p>
+      <p>Phone: <a href="tel:+254707914347">+254 707 914 347</a></p>
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 </body>
